@@ -1,4 +1,7 @@
-# Building-a-cpu-ig-
-Started with ALU
-made a 8bit ripple adder
-made a 8bit multiplexer 2to1 
+# Building a CPU
+
+## Progress
+
+- ✅ Started with the ALU
+- ✅ Built an 8-bit Ripple Carry Adder
+- ✅ Built an 8-bit 2-to-1 Multiplexer
