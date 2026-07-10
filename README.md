@@ -1,6 +1,6 @@
 # Building a CPU
 
-## Progress
+## Progress-1(ALU)
 
 - ✅ Started with the ALU
 - ✅ Built an 8-bit Ripple Carry Adder
