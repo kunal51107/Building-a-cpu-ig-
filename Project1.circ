@@ -125,6 +125,7 @@
     <comp lib="0" loc="(2730,640)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Y"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
@@ -136,10 +137,12 @@
     <comp lib="0" loc="(2730,870)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(390,1090)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(390,1090)" name="Splitter">
@@ -149,6 +152,7 @@
     <comp lib="0" loc="(410,560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="A"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(410,620)" name="Splitter">
@@ -158,6 +162,7 @@
     </comp>
     <comp lib="0" loc="(460,890)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="Cin"/>
     </comp>
     <comp loc="(1020,850)" name="FullAdder"/>
     <comp loc="(1280,850)" name="FullAdder"/>
@@ -259,6 +264,79 @@
     <a name="circuit" val="ArithmeticUnit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1190,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1510,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(1550,640)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(600,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(750,920)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(750,940)" name="Constant">
+      <a name="value" val="0xff"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(770,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(810,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="1" loc="(1010,640)" name="NOT Gate"/>
+    <comp lib="1" loc="(1110,660)" name="AND Gate"/>
+    <comp lib="1" loc="(820,900)" name="NOT Gate">
+      <a name="width" val="8"/>
+    </comp>
+    <comp loc="(1080,840)" name="MUX4to1_8"/>
+    <comp loc="(1440,640)" name="RippleAdder8"/>
+    <wire from="(1010,640)" to="(1060,640)"/>
+    <wire from="(1080,840)" to="(1190,840)"/>
+    <wire from="(1110,660)" to="(1220,660)"/>
+    <wire from="(1190,380)" to="(1190,640)"/>
+    <wire from="(1190,640)" to="(1220,640)"/>
+    <wire from="(1190,680)" to="(1190,840)"/>
+    <wire from="(1190,680)" to="(1220,680)"/>
+    <wire from="(1440,640)" to="(1550,640)"/>
+    <wire from="(1440,660)" to="(1490,660)"/>
+    <wire from="(1490,660)" to="(1490,700)"/>
+    <wire from="(1490,700)" to="(1510,700)"/>
+    <wire from="(600,370)" to="(600,880)"/>
+    <wire from="(600,880)" to="(600,900)"/>
+    <wire from="(600,880)" to="(860,880)"/>
+    <wire from="(600,900)" to="(790,900)"/>
+    <wire from="(750,920)" to="(860,920)"/>
+    <wire from="(750,940)" to="(860,940)"/>
+    <wire from="(770,380)" to="(770,640)"/>
+    <wire from="(770,640)" to="(770,840)"/>
+    <wire from="(770,640)" to="(980,640)"/>
+    <wire from="(770,840)" to="(860,840)"/>
+    <wire from="(810,380)" to="(810,680)"/>
+    <wire from="(810,680)" to="(1060,680)"/>
+    <wire from="(810,680)" to="(810,860)"/>
+    <wire from="(810,860)" to="(860,860)"/>
+    <wire from="(820,900)" to="(860,900)"/>
   </circuit>
   <circuit name="LogicUnit">
     <a name="appearance" val="logisim_evolution"/>
